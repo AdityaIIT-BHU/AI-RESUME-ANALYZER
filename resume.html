@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Resume Analyzer ⭐</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="resumeInput" accept=".pdf" />
+            <button id="uploadBtn">Upload & Analyze</button>
+        </div>
+
+        <div id="loadingStatus" class="hidden">
+            <p>Analyzing resume... this might take a few seconds.</p>
+        </div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <h2>ATS Score: <span id="atsScore" class="score">0</span>/100</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Extracted Skills</h3>
+                    <ul id="skillsList"></ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Missing Keywords</h3>
+                    <ul id="keywordsList"></ul>
+                </div>
+            </div>
+
+            <div class="card full-width">
+                <h3>Suggested Improvements</h3>
+                <ul id="suggestionsList"></ul>
+            </div>
+            
+            <div class="card full-width">
+                <h3>Grammar & Formatting</h3>
+                <ul id="grammarList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="resume.js"></script>
+</body>
+</html>
