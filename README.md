@@ -9,7 +9,7 @@ In-Memory File Handling: Uses Multer to process incoming file streams directly i
 Structured JSON Responses: Forces the AI to return strict JSON data structures, seamlessly mapping the output to the frontend UI dashboard.
 
 Tech Stack
-Frontend: HTML5, CSS3, Vanilla JavaScript (DOM Manipulation, Fetch API)
+Frontend: HTML, CSS, JavaScript (DOM Manipulation, Fetch API)
 Backend: Node.js, Express.js
 Middleware: Multer (Multi-part form data handling), CORS
 AI Integration: Google Gemini REST API (gemini-3.5-flash)
